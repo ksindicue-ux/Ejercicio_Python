@@ -4,11 +4,9 @@ Precios = []
 for i in range(cantidad):
     a=input("Nombre del producto: ")
     b=int(input("Precio del producto: "))
-    if b<0:
-        print("precio invalido, Ingrese de nuevo:")
-        b=int(input("Precio del producto: "))
-    Nombres.append(a)
-    Precios.append(b)
+    if b>0:
+        Nombres.append(a)
+        Precios.append(b)
 for i in range(len(Nombres)):
     print(Nombres[i],Precios[i])
 total = 0
